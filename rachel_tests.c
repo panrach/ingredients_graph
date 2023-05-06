@@ -434,7 +434,7 @@ void test_substitute_ingredient()
 	// 6.9: 9 ingredient recipe: adj matrix is 0
 	// 6.10: 9 ingredient recipe: sub soymilk; soymilk has the strongest weight
 	// 6.11: to_change is not in the recipe
-	// 6.13: chad the chad did this
+	// 6.13: chad's test :)
 	
 	// 6.1
 	char expected[1024];
@@ -565,7 +565,7 @@ void test_substitute_ingredient()
 	//print_recipe(recipe);
 	
 	// 6.13
-	// chad
+	// credit to Chad :)
 	set_recipe_9(recipe);
 	for (int i = 0; i < MAT_SIZE; i++) {
 		AdjMat[i][9] = 0;
@@ -584,27 +584,12 @@ void test_substitute_ingredient()
 int main()
 {
 	ghetto_load_ingredients();
-/* 	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < 10; j++)
-		{
-			AdjMat[i][j] = 0;
-		}
-		
-		if (i < 9)
-		{
-			AdjMat[i][i + 1] = 1;
-		}
-		
-	} */
-	
-	
 	//test_print_ingredients();
 	//test_ingredient_index();
 	//test_related_ingredients();
 	//test_k_dist();
 	//test_related_with_restrictions();
-	test_substitute_ingredient();
+	//test_substitute_ingredient();
 	
 	//print_adj();
 	
