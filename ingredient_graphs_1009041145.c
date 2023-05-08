@@ -601,6 +601,6 @@ void substitute_ingredient(char recipe[10][MAX_STR_LEN], char to_change[MAX_STR_
 	{
 		strcpy(recipe[change_index], ingredients[max_index]);
 	}
-	
+	printf("Hello hello world");
 	return;
 }
